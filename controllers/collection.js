@@ -4,7 +4,7 @@ function test(req, res){
     res.send('Test');
 }
 
-const client = new MongoClient(url);
+
 
 function liker(req, res){
     Collections.findByIdAndUpdate(req.params.id, {$inc:{likes:1}}, function(err){
