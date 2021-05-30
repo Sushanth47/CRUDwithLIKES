@@ -1,7 +1,5 @@
 const Collections = require('../models/collections');
-const { MongoClient } = require('mongodb');
-const dbURI = require('../index');
-const url=dbURI.dev_db_url;
+
 function test(req, res){
     res.send('Test');
 }
